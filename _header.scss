@@ -1,0 +1,36 @@
+.header {
+  background-color: #f5f7fa;
+  padding-top: 19px;
+  padding-bottom: 18px;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sitenav-list {
+    display: flex;
+    gap: 42px;
+    margin-right: 390px;
+  }
+  .head-navbar-list {
+    display: flex;
+    gap: 50px;
+  }
+
+  .nav-items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sitenav-link {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #18191f;
+  }
+  .sitenav-link:hover {
+    color: #3a79ff;
+  }
+}

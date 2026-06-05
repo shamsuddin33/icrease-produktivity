@@ -1,0 +1,299 @@
+main {
+  flex-grow: 1;
+}
+
+.hero {
+  .hero img {
+    max-width: 1440px;
+    // font-family: "Roboto";
+    width: 100%;
+  }
+  background-color: #f5f7fa;
+  //   width: 100%;
+  //   background-image: url(/images/png/clouds.png);
+  &-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .hero-title {
+      margin-top: 92px;
+      font-family: "Rbobto";
+      margin-bottom: 16px;
+      color: #3d4f9f;
+      @include font(500px, 10px, 100%);
+    }
+    .hero-text {
+      @include font(300px, 48px, 100%);
+      span {
+        @include font(300px, 48px, 100%);
+      }
+      margin-bottom: 28px;
+      font-family: "Quicksand";
+      color: #3d4f9f;
+    }
+    .hero-paragraph {
+      max-width: 500px;
+      text-align: center;
+      font-family: "Roboto";
+      color: #8d96bd;
+      @include font(400px, 15px, 191%);
+    }
+
+    .hero-btn {
+      margin-bottom: 212px;
+    }
+  }
+}
+.hero {
+  background-image: url(../../images/png/hero\ image\ \(1\).png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.atlassian {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 76px;
+  margin-top: 58px;
+  margin-bottom: 58px;
+  align-items: center;
+}
+
+.manage {
+  // width: 100%;
+  background-color: #f5f8ff;
+  display: flex;
+  // flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  // gap: 55px;
+  .section-one {
+    // margin-bottom: 216px;
+    // margin-top: 208px;
+    max-width: 413px;
+    .manage-title {
+      @include font(500px, 10px, 100%);
+      color: #3d4f9f;
+      font-family: "Roboto";
+      margin-bottom: 27px;
+    }
+    .manage-text {
+      @include font(500px, 36px, 100%);
+      color: #3d4f9f;
+      font-family: "Roboto";
+      margin-bottom: 27px;
+      span {
+        @include font(400px, 36px, 100%);
+      }
+    }
+    .manage-paragraph {
+      @include font(400px, 15px, 191%);
+      color: #8d96bd;
+      font-family: "Roboto";
+      margin-bottom: 47px;
+    }
+    .manage-btn {
+      margin: 13px 37px 13px 25px;
+      background-color: #4c85ff;
+      color: #ffffff;
+      @include font(700px, 13px, 100%);
+    }
+    .manage-btn-2 {
+      color: #adb4d2;
+      border: #adb4d2 bold 2px;
+      @include font(500px, 13px, 100%);
+    }
+  }
+  .manage-img {
+    margin-bottom: 170px;
+    margin-top: 170px;
+  }
+}
+
+// .app {
+//   background-image: url(../../images/png/features.png);
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+
+.app {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  text-align: center;
+  margin: 170px 340px 170px 340px;
+  .app-text {
+    font-family: "Roboto";
+    color: #3d4f9f;
+    @include font(500px, 10px, 100%);
+  }
+  .app-title {
+    font-family: "Quicksand";
+    color: #3d4f9f;
+    @include font(500px, 24px, 100%);
+  }
+  .features {
+    margin-top: 92px;
+    margin-bottom: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 67px;
+    .features-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      max-width: 140px;
+      .features-img {
+        margin-bottom: 33px;
+      }
+      .features-name {
+        margin-bottom: 25px;
+        font-family: "Open+Sans";
+        color: #4074f8;
+        @include font(700px, 14px, 177%);
+      }
+      .features-text {
+        font-family: "Open+Sans";
+        text-align: center;
+        color: #adb3cb;
+        @include font(600px, 11px, 177%);
+      }
+    }
+  }
+  .feat-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    .btn-tip {
+      span {
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+      color: #adb3cb;
+      margin-left: 16px;
+      margin-right: 16px;
+      @include font(600px, 11px, 177%);
+    }
+  }
+}
+
+.clients {
+  display: flex;
+  // justify-content: center;
+  // align-items: end;
+  .customers {
+    background-color: #6888ff;
+    width: 50%;
+    .customers-back {
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      flex-direction: column;
+      text-align: right;
+      max-width: 260px;
+      margin-bottom: 66px;
+      margin-top: 66px;
+      margin-left: 370px;
+      margin-right: 90px;
+      .customers-img {
+        display: flex;
+        align-items: start;
+      }
+      .customers-name {
+        margin-top: 24px;
+        font-family: "Quicksand";
+        color: #ffffff;
+        @include font(400px, 48px, 174%);
+      }
+      .customers-text {
+        color: #ffffff;
+        font-family: "Quicksand";
+        @include font(500px, 18px, 130%);
+      }
+    }
+  }
+  .users {
+    background-color: #e9efff;
+    width: 50%;
+    .users-back {
+      margin-left: 90px;
+      margin-top: 70px;
+      margin-bottom: 66px;
+      max-width: 260px;
+      .users-name {
+        margin-top: 24px;
+        font-family: "Quicksand";
+        color: #5e80ff;
+        @include font(400px, 48px, 174%);
+      }
+      .users-text {
+        color: #5e80ff;
+        font-family: "Quicksand";
+        @include font(500px, 18px, 130%);
+      }
+    }
+  }
+}
+
+.slider {
+  &-name {
+    margin-left: 594px;
+    margin-right: 593px;
+    margin-top: 103px;
+    text-align: center;
+    margin-bottom: 92px;
+    max-width: 253px;
+    .slider-title {
+      margin-bottom: 20px;
+      color: #3d4f9f;
+      font-family: "Roboto";
+      @include font(500px, 10px, 100%);
+    }
+    .slider-text {
+      color: #3d4f9f;
+      font-family: "Quicksand";
+      @include font(500px, 24px, 100%);
+    }
+  }
+  .bxslider {
+    max-width: 958px;
+    // margin-bottom: 104px;
+  }
+}
+
+.quots {
+  display: flex;
+  // justify-content: center;
+  .quots-text {
+    max-width: 333px;
+    text-align: left;
+    .quots-name {
+      margin-bottom: 31px;
+      color: #3d4f9f;
+      font-family: "Roboto";
+      @include font(500px, 10px, 100%);
+    }
+    .quots-title {
+      margin-bottom: 14px;
+      color: #3d4f9f;
+      font-family: "Quicksand";
+      @include font(500px, 36px, 100%);
+    }
+    .quots-paragraph {
+      color: #a4abc8;
+      font-family: "Open+Sans";
+      @include font(600px, 12px, 189%);
+    }
+  }
+  .quots-slider{
+    max-width: 600px;
+  }
+}
